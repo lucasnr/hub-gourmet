@@ -1,0 +1,63 @@
+.form .form__input-number {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form .form__control-btn {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  color: #ce2041;
+  display: flex;
+  font-size: 1.25rem;
+  height: 2rem;
+  justify-content: center;
+  width: 2rem;
+}
+
+.form .form__control-btn.form__control-btn--decrease {
+  background-color: #fafafa;
+  color: #000;
+}
+
+.form .form__control-btn.form__control-btn--increase {
+  background-color: #ce2041;
+  color: #000;
+}
+
+.form .form__input-number input[type='number'] {
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0px 0.5rem;
+  width: 2ch;
+  -moz-appearance: textfield;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.form .form__input-number input[type='number']::-webkit-outer-spin-button,
+.form .form__input-number input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form .form__radio input[type='radio'] {
+  display: none;
+}
+
+.form .form__radio input[type='radio'] + label {
+  background-color: #f2f2f2;
+  border: 0.375rem solid transparent;
+  border-radius: 50%;
+  display: block;
+  height: 1.375rem;
+  transition: border-color 0.1s linear;
+  width: 1.375rem;
+}
+
+.form .form__radio input[type='radio']:checked + label {
+  border-color: #ea1d2c;
+}
