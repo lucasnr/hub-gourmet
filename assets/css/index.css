@@ -1,0 +1,25 @@
+main {
+  background-color: #fff;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  padding: 1.5rem 1rem;
+}
+
+.menu-fixed main {
+  margin-top: 4.375rem; /*menu height*/
+}
+
+main section + section {
+  margin-bottom: 2rem;
+}
+
+#highlights {
+  display: flex;
+  overflow-x: scroll;
+  margin: -2rem -1rem 0px -1rem;
+  padding: 2rem 0px 2rem 1rem;
+}
+
+#highlights li {
+  padding-right: 1rem;
+}

@@ -1,0 +1,37 @@
+.product {
+  background-color: #fafafa;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.125);
+  display: flex;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.product + .product {
+  margin-top: 1rem;
+}
+
+.product .product__image {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 6.5rem;
+}
+
+.product .product__info {
+  padding: 0.75rem;
+}
+
+.product .product__name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.product .product__description {
+  font-weight: 500;
+  margin: 0.25rem 0px;
+}
+
+.product .product__price {
+  color: #ce2041;
+}
