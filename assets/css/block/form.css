@@ -9,7 +9,7 @@
   background-color: transparent;
   border: none;
   border-radius: 0.5rem;
-  color: #ce2041;
+  color: #ea1d2c;
   display: flex;
   font-size: 1.25rem;
   height: 2rem;
@@ -23,7 +23,7 @@
 }
 
 .form .form__control-btn.form__control-btn--increase {
-  background-color: #ce2041;
+  background-color: #ea1d2c;
   color: #fff;
 }
 
