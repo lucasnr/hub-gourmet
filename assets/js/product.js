@@ -4,8 +4,10 @@ $('.section-radio').each((index, element) => {
   $(svgs[1]).css('display', 'none');
 
   const inputs = $element.find('input[type="radio"]');
-  inputs.change(() => {
+  const callback = () => {
     $(svgs[0]).css('display', 'none');
     $(svgs[1]).css('display', 'block');
-  });
+    inputs.off('change');
+  };
+  inputs.change(callback);
 });
