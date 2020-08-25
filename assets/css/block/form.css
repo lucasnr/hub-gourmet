@@ -44,6 +44,25 @@
   margin: 0;
 }
 
+.form .form__section__header {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+  min-height: 3.5rem;
+}
+
+.form .form__section .form__section__title {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.form .form__section .form__section__subtitle {
+  color: #575757;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
 .form .form__radio input[type='radio'] {
   display: none;
 }
@@ -60,4 +79,36 @@
 
 .form .form__radio input[type='radio']:checked + label {
   border-color: #ea1d2c;
+}
+
+.form .form__btn {
+  background-color: #ea1d2c;
+  border: none;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.75rem 1.25rem;
+  width: 100%;
+}
+
+.form .form__btn > * + * {
+  margin-left: 0.5rem;
+}
+
+.form input:not([type='number']),
+.form textarea {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  display: block;
+  font-size: 0.875rem;
+  padding: 0.75rem;
+  transition: border-color 0.2s ease;
+  width: 100%;
+}
+
+.form input:not([type='number']):hover,
+.form input:not([type='number']):focus,
+.form textarea:hover,
+.form textarea:focus {
+  border-color: rgba(0, 0, 0, 0.75);
 }

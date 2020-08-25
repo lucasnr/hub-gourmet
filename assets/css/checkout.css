@@ -1,0 +1,144 @@
+body {
+  padding-bottom: 1rem;
+  padding-top: 3.125rem; /*header height*/
+  background-color: #fff;
+}
+
+#header {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  left: 0;
+  padding: 0.75rem 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+#header a {
+  display: flex;
+}
+
+#header .title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-left: 1rem;
+}
+
+#cart {
+  padding-bottom: 1.5rem;
+}
+
+#cart .title {
+  margin-bottom: 0px;
+}
+
+#cart .row {
+  align-items: flex-start;
+}
+
+#cart .form__btn {
+  text-align: center;
+}
+
+#cart ul li::before {
+  border: 1px solid #575757;
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  margin: 0px 0.5rem;
+  height: 0.25rem;
+  width: 0.25rem;
+}
+
+#cart ul li > * {
+  display: inline;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex .subtitle {
+  white-space: nowrap;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.75rem;
+  margin-top: 0.25rem;
+  padding: 0px 0.25rem;
+}
+
+.menu-icon,
+.menu-button::before,
+.menu-button::after {
+  background-color: #ea1d2c;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 0.25rem;
+  margin: 0.0625rem 0px;
+  width: 0.25rem;
+}
+
+#cart .cart-price {
+  border: none;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+}
+
+.mandatory-label {
+  background-color: #4b4b4d;
+  border-radius: 50rem;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+}
+
+.form input {
+  margin: 1rem 0px 1.5rem 0px;
+}
+
+.form textarea {
+  margin: 1rem 0px 0.5rem 0px;
+}
+
+.form textarea + * {
+  display: block;
+  color: #575757;
+  font-size: 0.625rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.subtitle:not(small) {
+  color: #000;
+}
+
+#address-section address {
+  align-items: center;
+  display: flex;
+  font-style: normal;
+  padding: 1rem 0px;
+}
+
+#address-section address img {
+  height: 100%;
+  margin-right: 1rem;
+  width: 3.75rem;
+}
+
+#address-section #address-section-change {
+  background: none;
+  border: none;
+  display: none;
+  margin-left: auto;
+  padding: 0.5rem;
+}

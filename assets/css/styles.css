@@ -12,13 +12,15 @@ body {
   overflow-x: hidden;
 }
 
-main {
+main,
+body > .form {
   flex-grow: 1;
 }
 
 body,
 input,
-button {
+button,
+textarea {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -61,4 +63,43 @@ p {
   font-size: 1.25rem;
   font-weight: 800;
   margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #575757;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.padding {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.row .price {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.row .subtitle {
+  font-weight: 400;
+}
+
+.row small.subtitle {
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.row + .row {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
