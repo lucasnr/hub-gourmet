@@ -2,13 +2,13 @@
   const body = $(document.body);
   const sections = $('main section');
   const menu = $('.menu');
-  const menuOffset = menu.prev().offset().top + menu.prev().height();
+  const menuOffset = 318; // 310 = offset + 8 = padding
   const list = menu.find('.menu__nav > ul');
   const links = list.find('li a');
 
   let activeIndex = 0;
   $(window).scroll(function () {
-    if (pageYOffset < menuOffset + 8) {
+    if (pageYOffset < menuOffset) {
       body.removeClass('menu-fixed');
       return;
     }
