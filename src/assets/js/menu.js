@@ -52,7 +52,7 @@
   links.each((index, element) => {
     const $element = $(element);
     $element.click((event) => {
-      if (this.hash !== '') {
+      if (element.hash !== '') {
         event.preventDefault();
 
         const { hash } = element;

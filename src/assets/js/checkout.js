@@ -17,7 +17,7 @@
       .text(`${bairro}/${uf}`);
   };
 
-  $('#retirar').change(() => {
+  const buildRetirar = () => {
     buildAddressSection({
       logradouro: 'Rua Mem de Sá',
       numero: '150',
@@ -28,7 +28,8 @@
     });
 
     changeButton.css('display', 'none');
-  });
+  };
+  $('#retirar').change(buildRetirar);
 
   let address;
   let saved = false;
@@ -52,7 +53,10 @@
   const dismiss = () => {
     modal.removeClass('show');
     if (saved) buildSavedAddress();
-    else $('#retirar').prop('checked', 'checked');
+    else {
+      $('#retirar').prop('checked', 'checked');
+      buildRetirar();
+    }
   };
   dismissButton.click(dismiss);
 
