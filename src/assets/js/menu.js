@@ -2,19 +2,20 @@
   const body = $(document.body);
   const sections = $('main section');
   const menu = $('.menu');
-  const menuOffset = menu.offset().top;
+  const menuOffset = menu[0].offsetTop;
   const list = menu.find('.menu__nav > ul');
   const links = list.find('li a');
 
   let activeIndex = 0;
   $(window).scroll(function () {
-    if (pageYOffset >= menuOffset) body.addClass('menu-fixed');
-    else {
+    if (pageYOffset < menuOffset + 8) {
       body.removeClass('menu-fixed');
       return;
     }
 
+    body.addClass('menu-fixed');
     let toActiveIndex = 0;
+
     sections.each((index, element) => {
       const $element = $(element);
       if (pageYOffset > $element.offset().top - menu.height() - 8)
