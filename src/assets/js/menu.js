@@ -2,7 +2,7 @@
   const body = $(document.body);
   const sections = $('main section');
   const menu = $('.menu');
-  const menuOffset = menu[0].offsetTop;
+  const menuOffset = menu.prev().offset().top + menu.prev().height();
   const list = menu.find('.menu__nav > ul');
   const links = list.find('li a');
 
