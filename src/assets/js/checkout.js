@@ -78,6 +78,7 @@
 
   searchForm.find('input').mask('00000-000', {
     onComplete: (maskedCep, event, input) => {
+      input.blur();
       const cep = input.cleanVal();
       $.get(`https://viacep.com.br/ws/${cep}/json/`, setAddress);
     },
