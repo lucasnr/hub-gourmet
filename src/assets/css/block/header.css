@@ -1,10 +1,26 @@
-#header {
-  background-color: #fff;
-  padding: 0.675rem 0px;
+body {
+  padding-top: 3.125rem; /*header height*/
 }
 
-#header img {
-  display: block;
-  margin: 0px auto;
-  width: 160px;
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  left: 0;
+  padding: 0.75rem 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.header a {
+  display: flex;
+}
+
+.header .title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-left: 1rem;
 }

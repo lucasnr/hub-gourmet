@@ -18,6 +18,19 @@
   width: 2.25rem;
 }
 
+body {
+  padding-top: 0px;
+}
+
+.header {
+  transform: translateY(-100%);
+  transition: transform 0.15s ease-in;
+}
+
+.header.show {
+  transform: translateY(0%);
+}
+
 main {
   background-color: #fff;
   border-top-left-radius: 2rem;
